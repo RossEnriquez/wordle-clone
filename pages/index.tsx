@@ -1,15 +1,17 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import { Text, Button, useColorMode, ColorModeScript } from "@chakra-ui/react";
+import theme from "./helpers/theme";
+import Link from "next/link";
+import Navbar from "./components/navbar";
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+const IndexPage = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
 
-export default IndexPage
+  return (
+    <>
+      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+      <Navbar />
+    </>
+  );
+};
+
+export default IndexPage;
