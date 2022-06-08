@@ -10,7 +10,13 @@ const Navbar = () => {
           <GiHamburgerMenu color="white" size={30} />
           {/* <GiHelp color="white" size={25} /> */}
         </Flex>
-        <Text color="white" alignSelf="center">
+        <Text
+          fontFamily="Helvetica Neue"
+          fontWeight="bold"
+          fontSize="3xl"
+          color="white"
+          alignSelf="center"
+        >
           Wordle
         </Text>
         <Flex id="right-nav" mr="20px" alignSelf="center">

@@ -15,9 +15,15 @@ const styles = {
   }),
 };
 
+const fonts = {
+  heading: `'Helvetica Neue', sans-serif`,
+  body: `'Helvetica Neue', sans-serif`,
+};
+
 const theme = extendTheme({
   config,
   styles,
+  fonts,
 });
 
 export default theme;
